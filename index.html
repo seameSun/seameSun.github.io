@@ -165,6 +165,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/17/redis/">redis</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/17/redis/" class="archive-article-date">
+  	<time datetime="2018-08-17T06:15:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>redis初识<br>Redis 是完全开源免费的，是一个高性能的key-value数据库。<br>特点：<br>Redis支持数据的持久化<br>支持set，zset，hash等数据结构的存储<br>Redis支持数据的备份，即master-slave模式的数据备份。<br>优势：<br>性能极高 – Redis能读的速度是110000次/s,写的速度是81000次/s<br>富的数据类型 – Redis支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。<br>原子 – Redis的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子性的。多个操作也支持事务，即原子性，通过MULTI和EXEC指令包起来。<br>丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性。</p>
+<p>安装<br>安装包： 参考<a href="http://www.runoob.com/redis/redis-install.html" target="_blank" rel="noopener">http://www.runoob.com/redis/redis-install.html</a></p>
+<p>先启动server： </p>
+<ol>
+<li>打开cmd  运行redis-server.exe </li>
+<li>另外打开一个cmd 运行 redis-cli.exe -h 127.0.0.1 -p 6379</li>
+<li>设置键值对 set myKey abc</li>
+<li>取出键值对 get myKey</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">know</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/17/redis/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-link" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -189,6 +271,7 @@
 <p>django<br><a href="https://wizardforcel.gitbooks.io/django-book-20-zh-cn/content/1.html" target="_blank" rel="noopener">https://wizardforcel.gitbooks.io/django-book-20-zh-cn/content/1.html</a></p>
 <p>ui设计参考：<br>途家<br><a href="https://www.tujia.com/?utm_source=sogou&amp;utm_medium=cpc&amp;utm_term=sgzttupian&amp;refurl=https%3a%2f%2fwww.sogou.com%2f" target="_blank" rel="noopener">https://www.tujia.com/?utm_source=sogou&amp;utm_medium=cpc&amp;utm_term=sgzttupian&amp;refurl=https%3a%2f%2fwww.sogou.com%2f</a></p>
 <p>react:<br><a href="https://react-cn.github.io/react/docs/animation.html" target="_blank" rel="noopener">https://react-cn.github.io/react/docs/animation.html</a></p>
+<p>markdown：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a></p>
 
       
 
@@ -442,6 +525,13 @@
 3. 这个变量是否可以通过其他的状态或者属性props计算得到，如果是，则不是一个转态
 4. 这个变量是否在组件的render方法中使用？ 如果不是，则它不是一个状态，这种情况下，可以定义为组件的普通属性
 </code></pre><h3 id="列表和key"><a href="#列表和key" class="headerlink" title="列表和key"></a>列表和key</h3><p>1.列表和keys：<br>    列表中的每个元素添加key属性，作用react通过这个key知道哪些元素发生变化， 从而只渲染变化的元素，提高渲染效率<br>2.key的取值问题：<br>    一般建议使用appid groupid类似于这样的<br>    如果列表页中没有这些，也可以使用位置索引index  react不推荐使用位置索引做key ， 列表的数据发生重排， 数据的索引也会变化，不利于react的渲染</p>
+<h3 id="react16新特性"><a href="#react16新特性" class="headerlink" title="react16新特性"></a>react16新特性</h3><blockquote>
+<ul>
+<li>react16之前，render方法必须返回单一元素，现在支持两种新类型：数组和字符串</li>
+<li>新的错误处理机制，componentDidCatch这个组件成为一个错误边界，<br>  源码例子<a href="https://github.com/xuchaobei/react-book/blob/master/chapter-03/react16-error-boundary/src/App.js" target="_blank" rel="noopener">https://github.com/xuchaobei/react-book/blob/master/chapter-03/react16-error-boundary/src/App.js</a></li>
+<li>react16d的portals特性让我们可以把组件渲染到当前组件树意外的DOM节点上，典型的应用场景是：渲染应用的全局弹框。<br>  源码例子<br>  <a href="https://github.com/xuchaobei/react-book/blob/master/chapter-03/react16-portals/src/App.js" target="_blank" rel="noopener">https://github.com/xuchaobei/react-book/blob/master/chapter-03/react16-portals/src/App.js</a></li>
+</ul>
+</blockquote>
 
       
 
