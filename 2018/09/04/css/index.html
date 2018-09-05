@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://seamesun.github.io">
-  <title>wetchat | blog of seame</title>
+  <title>css | blog of seame</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="下载微信web开发者工具：地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html2.第一个demo：https://developers.weixin.qq.com/miniprogram/dev/#申请帐号 默认目录讲解：小程序配置 app.json pages字段 —— 用于描述当前小程序所有页面路">
+  <meta name="description" content="层次选择器  后代选择器 选择某元素的后代元素  比如E F ， E为祖先， F为后代，代表选择了E的所有后代F元素  子选择器 只能选择某元素的子元素比如说 E&amp;gt;F ，其中E为父元素， F为子元素 ， 和后代选择器(E F)不同， E&amp;gt;F仅选择了E下的F子元素，更深层次的F元素不会被选择。即选择父元素为 E元素的所有F 元素。  相邻兄弟选择器比如E+F, E和F具有相同的父元素，而">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wetchat">
-<meta property="og:url" content="https://seamesun.github.io/2018/08/31/wetchat/index.html">
+<meta property="og:title" content="css">
+<meta property="og:url" content="https://seamesun.github.io/2018/09/04/css/index.html">
 <meta property="og:site_name" content="blog of seame">
-<meta property="og:description" content="下载微信web开发者工具：地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html2.第一个demo：https://developers.weixin.qq.com/miniprogram/dev/#申请帐号 默认目录讲解：小程序配置 app.json pages字段 —— 用于描述当前小程序所有页面路">
+<meta property="og:description" content="层次选择器  后代选择器 选择某元素的后代元素  比如E F ， E为祖先， F为后代，代表选择了E的所有后代F元素  子选择器 只能选择某元素的子元素比如说 E&amp;gt;F ，其中E为父元素， F为子元素 ， 和后代选择器(E F)不同， E&amp;gt;F仅选择了E下的F子元素，更深层次的F元素不会被选择。即选择父元素为 E元素的所有F 元素。  相邻兄弟选择器比如E+F, E和F具有相同的父元素，而">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-31T05:49:11.136Z">
+<meta property="og:updated_time" content="2018-09-05T03:01:27.549Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wetchat">
-<meta name="twitter:description" content="下载微信web开发者工具：地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html2.第一个demo：https://developers.weixin.qq.com/miniprogram/dev/#申请帐号 默认目录讲解：小程序配置 app.json pages字段 —— 用于描述当前小程序所有页面路">
+<meta name="twitter:title" content="css">
+<meta name="twitter:description" content="层次选择器  后代选择器 选择某元素的后代元素  比如E F ， E为祖先， F为后代，代表选择了E的所有后代F元素  子选择器 只能选择某元素的子元素比如说 E&amp;gt;F ，其中E为父元素， F为子元素 ， 和后代选择器(E F)不同， E&amp;gt;F仅选择了E下的F子元素，更深层次的F元素不会被选择。即选择父元素为 E元素的所有F 元素。  相邻兄弟选择器比如E+F, E和F具有相同的父元素，而">
   
     <link rel="alternative" href="/atom.xml" title="blog of seame" type="application/atom+xml">
   
@@ -164,34 +164,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-wetchat" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      wetchat
+      css
     </h1>
   
 
         
-        <a href="/2018/08/31/wetchat/" class="archive-article-date">
-  	<time datetime="2018-08-31T02:34:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-31</time>
+        <a href="/2018/09/04/css/" class="archive-article-date">
+  	<time datetime="2018-09-04T10:00:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>下载微信web开发者工具：地址：<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener">https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html</a><br>2.第一个demo：<a href="https://developers.weixin.qq.com/miniprogram/dev/#申请帐号" target="_blank" rel="noopener">https://developers.weixin.qq.com/miniprogram/dev/#申请帐号</a></li>
-<li>默认目录讲解：<br>小程序配置 app.json<br> pages字段 —— 用于描述当前小程序所有页面路径，这是为了让微信客户端知道当前你的小程序页面定义在哪个目录。<br> 而写在 pages 字段的第一个页面就是这个小程序的首页（打开小程序看到的第一个页面）。<br> window字段 —— 定义小程序所有页面的顶部背景颜色，文字颜色定义等。<br>工具配置 project.config.json<br>通常大家在使用一个工具的时候，都会针对各自喜好做一些个性化配置，例如界面颜色、编译配置等等，当你换了另外一台电脑重新安装工具的时候，你还要重新配置<br>页面配置 page.json<br>如果你整个小程序的风格是蓝色调，那么你可以在 app.json 里边声明顶部颜色是蓝色即可。实际情况可能不是这样，可能你小程序里边的每个页面都有不一样的色调来区分不同功能模块，因此我们提供了 page.json，让开发者可以独立定义每个页面的一些属性，例如刚刚说的顶部颜色、是否允许下拉刷新等等。</li>
+        <p>层次选择器</p>
+<ol>
+<li>后代选择器 选择某元素的后代元素</li>
 </ol>
-<p>小程序运行流程：<br>而写在 pages 字段的第一个页面就是这个小程序的首页（打开小程序看到的第一个页面）。于是微信客户端就把首页的代码装载进来，通过小程序底层的一些机制，就可以渲染出这个首页。<br>小程序启动之后，在 app.js 定义的 App 实例的 onLaunch 回调会被执行:</p>
-<p>程序与页面<br>你可以观察到 pages/logs/logs 下其实是包括了4种文件的，微信客户端会先根据 logs.json 配置生成一个界面，顶部的颜色和文字你都可以在这个 json 文件里边定义好。紧接着客户端就会装载这个页面的 WXML 结构和 WXSS 样式。最后客户端会装载 logs.js，你可以看到 logs.js 的大体内容就是:</p>
-<p>Page({<br>  data: { // 参与页面渲染的数据<br>    logs: []<br>  },<br>  onLoad: function () {<br>    // 页面渲染后 执行<br>  }<br>})<br>Page 是一个页面构造器，这个构造器就生成了一个页面。在生成页面的时候，小程序框架会把 data 数据和 index.wxml 一起渲染出最终的结构，于是就得到了你看到的小程序的样子。</p>
-<p>在渲染完界面之后，页面实例就会收到一个 onLoad 的回调，你可以在这个回调处理你的逻辑。</p>
+<p>比如E F ， E为祖先， F为后代，代表选择了E的所有后代F元素</p>
+<ol start="2">
+<li><p>子选择器 只能选择某元素的子元素<br>比如说 E&gt;F ，其中E为父元素， F为子元素 ， 和后代选择器(E F)不同， E&gt;F仅选择了E下的F子元素，更深层次的F元素不会被选择。即选择父元素为 E元素的所有F 元素。</p>
+</li>
+<li><p>相邻兄弟选择器<br>比如E+F, E和F具有相同的父元素，而且F元素在E元素后面且紧相邻</p>
+</li>
+<li><p>通用元素选择器<br>比如E~F, E和F属于同一父元素内， 并且F在E之后, 那么E~F将选择E元素后面的所有F</p>
+</li>
+</ol>
+<p>5.选择器组合</p>
+<ol start="6">
+<li>伪类选择器<br>是为了某些选择器添加特殊的效果， 伪类选择器和类选择器的区别是，类选择器可以自由命名，而伪类选择器是css中已经定义好的选择器<br>a:link a未被访问过的样式<br>a：hover a对象在鼠标悬停时的样式<br>a:active 在鼠标单击与释放</li>
+</ol>
 
       
 
@@ -271,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://seamesun.github.io/2018/08/31/wetchat/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://seamesun.github.io/2018/09/04/css/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -285,18 +294,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/09/04/css/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/09/05/test/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          css
+          test
         
       </div>
     </a>
   
   
-    <a href="/2018/08/17/redis/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">redis</div>
+    <a href="/2018/08/31/wetchat/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">wetchat</div>
       <i class="icon-circle-right"></i>
     </a>
   
